@@ -1,0 +1,112 @@
+.board {
+	width: 80%;
+	background-color: #fff;
+	position: relative;
+	float: right;
+	height: 100vh;
+
+	/* z-index: 0; */
+}
+
+.shape {
+	position: absolute;
+}
+
+.anchor {
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border: 1px solid #000;
+	position: absolute;
+}
+
+.anchor-TL {
+	top: -5px;
+	left: -5px;
+}
+
+.anchor-TR {
+	top: -5px;
+	right: -5px;
+}
+
+.anchor-BL {
+	bottom: -5px;
+	left: -5px;
+}
+
+.anchor-BR {
+	bottom: -5px;
+	right: -5px;
+}
+
+.sideBar {
+	width: 150px;
+	/* background-color: #ddd; */
+	background: url(https://subtlepatterns.com/patterns/symphony.png);
+	float: left;
+	width: 20%;
+	height: 100vh;
+	min-width: 120px;
+	/* max-width: 160px; */
+}
+
+.sideBar form {
+	/* display: inline-block; */
+	 /* margin: 0 auto;  */
+}
+
+.sideBar form button {
+	margin: 20px auto;
+	background-color: #333;
+	color: #fff;
+	border-radius: 0 20% 0 20%;
+	box-shadow: 0 8px 6px -6px #555;
+	width: 80%;
+	max-width: 110px;
+	display: block;
+	height: 65px;
+	position: relative;
+	border: none;
+}
+
+.sideBar form button:focus {
+	outline:none;
+}
+
+
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+
+.colorsPalette{
+  box-sizing: border-box;
+  width: 110px;
+  height: 70px;
+  /* background: #ddd; */
+  position: absolute;
+  padding: 5px;
+  top: 65px;
+  /* z-index: 1; */
+  left: 0;
+
+  /* margin: 10 auto; */
+  /* border: 1px solid white; */
+}
+
+.colorDiv{
+  box-sizing: border-box;
+  float: left;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  border: 1px solid #999;
+  cursor: pointer;
+}

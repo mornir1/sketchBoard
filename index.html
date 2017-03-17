@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	
+	<div class="board">
+	</div>
+	<div class="sideBar">
+		<form action="">
+			<button type="button" class="loadButton">load</button>
+			<button type="button" class="saveButton">save</button>
+			<button type="button" class="rectangleButton">Rectangle</button>
+			<button type="button" class="ovalButton">Oval</button>
+			<button type="button" class="deleteButton">Delete</button>
+			<button type="button" class="clearButton">Clear</button>
+			<div class="colorsPalette"></div>
+			<!-- <button type="button">Color<div class="colorsPalette"></div></button> -->
+		</form>
+	</div>
+	<div class="Overlay saveOverlay">
+		<div class="overlayBoxGeneral saveBox">
+			<div class="saveLoadHeadline">Save<span class="saveX">&times;</span></div>
+			<form action="">
+				<input class="saveInput" type="text" placeholder="Enter name">
+				<button class="overlayButtons saveLocal">save</button>
+			</form>
+		</div>
+	</div>
+	<div class="Overlay loadOverlay">
+		<div class="overlayBoxGeneral loadBox">
+			<div class="saveLoadHeadline">Load<span class="loadX">&times;</span></div>
+			<form action="">
+				<select class="loadSelect" name="example">
+				    <!-- <option value="A">A</option>
+				    <option value="B">A</option>
+				    <option value="-">Other</option> -->
+				</select>
+				<fieldset class="LoadDeleteButton-container">
+					<button class="overlayButtons loadLocal">load</button>
+					<button class="overlayButtons deleteLocal">delete</button>
+				</fieldset>
+				
+
+			</form>
+		</div>
+	</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
